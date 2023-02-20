@@ -5,17 +5,16 @@ const dataSource = new ProductData('tents');
 
 function addProductToCart(product) {
   let products = getLocalStorage('so-cart');
-  
+
   // check to see if products exist
   if (products) {
     products.push(product);
-    
   } else {
     products = [product];
   }
 
   // add product array to local storage
-  setLocalStorage('so-cart', products); 
+  setLocalStorage('so-cart', products);
 }
 
 // add to cart button event handler
