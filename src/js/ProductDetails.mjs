@@ -1,6 +1,8 @@
 import { setLocalStorage } from './utils.mjs';
 
 function productDetailsTemplate(product) {
+  //TEMP:
+  console.log(product);
   return `<section class="product-detail">
         <h3>${product.Brand.Name}</h3>
 
@@ -8,7 +10,7 @@ function productDetailsTemplate(product) {
 
         <img
           class="divider"
-          src="${product.Image}"
+          src="${product.Images.PrimaryLarge}"
           alt="${product.NameWithoutBrand}"
         />
 
